@@ -1,0 +1,301 @@
+/* ==============================
+   THEME VARIABLES
+============================== */
+:root {
+    --theme: #f7f7c6;
+    --theme-dark: #ececaa;
+    --theme-border: #e1e1a0;
+    --theme-text: #4b4b2f;
+    --theme-muted: #8a8a5c;
+}
+
+/* ==============================
+   PAGE BACKGROUND
+============================== */
+
+
+/* ==============================
+   PRODUCT IMAGE
+============================== */
+.border.rounded {
+    background: var(--theme);
+    border: 1px solid var(--theme-border) !important;
+}
+
+.border.rounded img {
+    transition: transform 0.3s ease;
+}
+
+.border.rounded:hover img {
+    transform: scale(1.05);
+}
+
+/* ==============================
+   TEXT
+============================== */
+h4,
+h5 {
+    color: var(--theme-text);
+}
+
+p {
+    color: #555;
+}
+
+.text-danger {
+    color: #a94442 !important;
+}
+
+/* ==============================
+   PRICE
+============================== */
+h5.fw-bold {
+    color: #6b6b2e;
+}
+
+/* ==============================
+   ICONS
+============================== */
+.fa-star,
+.fa-eye,
+.fa-shopping-bag {
+    color: #9a9a3c;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+.btn.border-secondary {
+    background: var(--theme);
+    border-color: var(--theme-border);
+    color: var(--theme-text);
+    transition: all 0.3s ease;
+}
+
+.btn.border-secondary:hover {
+    background: var(--theme-dark);
+    color: #000;
+}
+
+.btn-outline-danger {
+    border-radius: 20px;
+}
+
+/* ==============================
+   QUANTITY BUTTONS
+============================== */
+.btn-minus,
+.btn-plus {
+    background: var(--theme);
+    border: 1px solid var(--theme-border);
+}
+
+.btn-minus:hover,
+.btn-plus:hover {
+    background: var(--theme-dark);
+}
+
+/* ==============================
+   TABS
+============================== */
+.nav-tabs {
+    border-bottom: 1px solid var(--theme-border);
+}
+
+.nav-tabs .nav-link {
+    background: #fff;
+    color: var(--theme-text);
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    background: var(--theme);
+    border-bottom: 2px solid #9a9a3c;
+    font-weight: 600;
+}
+
+/* ==============================
+   TAB CONTENT
+============================== */
+.tab-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* ==============================
+   COMMENTS
+============================== */
+.rounded-circle {
+    border: 3px solid var(--theme-border);
+}
+
+hr {
+    border-color: var(--theme-border);
+}
+
+/* ==============================
+   COMMENT BOX
+============================== */
+textarea.form-control {
+    background: #fffef2;
+    border-radius: 12px;
+    resize: none;
+}
+
+textarea.form-control:focus {
+    border-color: var(--theme-border);
+    box-shadow: 0 0 0 0.2rem rgba(247, 247, 198, 0.5);
+}
+
+/*rating */
+.rating-css div {
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.rating-css input {
+    display: none;
+}
+
+rating-css input+label {
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #8f8420;
+    cursor: pointer;
+}
+
+.rating-css input:checked+label~label {
+    color: #b4afaf;
+}
+
+.rating-css label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+/*end of star rating*/
+.checked {
+    color: #f7f7c6;
+}
+
+
+/* ==============================
+   MODAL
+============================== */
+.modal-content {
+    border-radius: 18px;
+}
+
+.modal-header {
+    background: var(--theme);
+    border-bottom: 1px solid var(--theme-border);
+}
+
+/* ==============================
+   OWL CAROUSEL
+============================== */
+.owl-carousel .owl-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.owl-carousel .owl-dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd !important;
+}
+
+.owl-carousel .owl-dots button.active {
+    background: #9a9a3c !important;
+    transform: scale(1.2);
+}
+
+/* ==============================
+   PRODUCT CARD
+============================== */
+.vesitable-item {
+    background: #fff;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.vesitable-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vesitable-img img {
+    transition: transform 0.3s ease;
+}
+
+.vesitable-item:hover .vesitable-img img {
+    transform: scale(1.08);
+}
+
+
+/* Theme button */
+.btn-theme {
+    background-color: #f7f7c6;
+    border: 1px solid #e1e1a0;
+    color: #4b4b2f;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+    background-color: #ececaa;
+    color: #000;
+}
+
+/*
+home page pagination */
+
+span .pagination {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* Page items as inline-block */
+span .pagination li {
+    display: inline-block !important;
+}
+
+/* Links style */
+span .pagination .page-link {
+    border-radius: 50px;
+    border: 1px solid #f7f7c6;
+    color: #333;
+    background-color: white;
+    padding: 6px 14px;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+span .pagination .page-link:hover {
+    background-color: #f7f7c6;
+    color: #000;
+    transform: translateY(-1px);
+}
+
+/* Active page */
+span .pagination .active .page-link {
+    background-color: #f7f7c6;
+    border-color: #f7f7c6;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Disabled page */
+span .pagination .disabled .page-link {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

@@ -15,7 +15,3 @@ This project helps manage products, sales, and inventory efficiently.
 - **Frontend:** HTML, CSS, JavaScript
 - **Other Tools:** XAMPP (local server)
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YaminAye/PointOfSale-project.git

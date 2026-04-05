@@ -75,14 +75,14 @@
                 </a>
             </li>
 
-            @if(auth()->user()->role == 'superadmin')
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('paymentMethod#list') }}">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <span>Payment Method</span>
-                    </a>
-                </li>
-            @endif
+            @if(auth()->check() && auth()->user()->role == 'superadmin')
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('paymentMethod#list') }}">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payment Method</span>
+                </a>
+            </li>
+        @endif
 
             <!-- Sale Info -->
             <li class="nav-item">

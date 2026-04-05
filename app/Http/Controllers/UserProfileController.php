@@ -34,7 +34,7 @@ class UserProfileController extends Controller
        $user = User::findOrFail($id);
 
        // Handle image upload (merged version)
-       if ($request->hasFile('image')) {
+       if ($request->hasFile('profile')) {
 
            // Delete old image if exists
            if ($user->profile && file_exists(public_path('userProfile/' . $user->profile))) {
